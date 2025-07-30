@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="utf-8">
+    <title>BG6QED</title>
+    <meta name="author" content="Grunt">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BG6QEDのHomepage">
+    <meta name="fediverse:creator" content="BG6QED@ham.moe" />
+    <meta name="keywords" content="BG6QED, ham, radio, AmateurRadio, transmitter, LF, HF, VHF, UHF, CQ, CW, SSB, USB, LSB, VarAC, FT8, APRS, QRP, SDR, signal, QRZ, ISS, SSTV, Morse, LoTW, D-Star, satellite, CRAC, icom, callsign, radiostation, 无线电, 业余无线电, 呼号, 火腿, 短波电台, 手台, 天线, 通联, 摩尔斯, 卫星">
+    <link rel="icon" href="/img/radio-transmitter.png" type="image/png">
+    <link rel="stylesheet" href="style/css/main.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6EE50TTYSL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-6EE50TTYSL');
+    </script>
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "7f9888d651e24518920f0d4704871751"}'></script>
+</head>
+<body>
+    <header class="content-container">
+        <img class="avatar" src="img/radio-transmitter.png" alt="Radio Transmitter Avatar"/>
+        <div class="spectrum-container"></div>
+            <canvas class="spectrum-container" id="spectrum"></canvas>
+        <div id="custom-cursor"></div>
+        <div class="text part1">
+            <span class="letter"><div class="character" style="color: #a29bfe;">B</div></span>
+            <span class="letter"><div class="character" style="color: #74b9ff;">G</div></span>
+            <span class="letter"><div class="character" style="color: #81ecec;">6</div></span>
+            <span class="letter"><div class="character" style="color: #ffeaa7;">Q</div></span>
+            <span class="letter"><div class="character" style="color: #fab1a0;">E</div></span>
+            <span class="letter"><div class="character" style="color: #ff7675;">D</div></span>
+        </div>
+        <span class="bio">
+            <span style="transition-delay:.3s">与</span>
+            <span style="transition-delay:.5s" class="emphasis">您</span>
+            <span style="transition-delay:.8s">通联</span>
+            <span style="transition-delay:1s">非常</span>
+            <span style="transition-delay:1.3s">开心</span>
+            <span style="transition-delay:1.8s">愿</span>
+            <span style="transition-delay:2s">信号</span>
+            <span style="transition-delay:2.5s">永远</span>
+            <span style="transition-delay:2.8s" class="emphasis">5</span>
+            <span style="transition-delay:3s" class="emphasis">9</span>
+            <span style="transition-delay:3.3s" class="emphasis">9</span>
+            <span style="transition-delay:3.5s">空中</span>
+            <span style="transition-delay:4s">常见</span>
+            <span style="transition-delay:4.3s">老朋友</span>
+            <span style="transition-delay:4.5s" class="emphasis">73!</span>
+        </span>
+    </header>
+    <main>
+        <ul class="social-links">
+            <li><a href="https://lixiang.blog" target="_blank"><img src="img/blog.png" alt="Blog" width="50px"/></a></li>
+            <li><a href="https://ham.qzz.io/visitor/BG6QED" target="_blank"><img src="img/hamlog.png" alt="Ham Log" width="50px"/></a></li>
+            <li><a href="https://onenice.site" target="_blank"><img src="img/bookmarks.png" alt="One Nice Site" width="50px"/></a></li>
+            <li><a href="https://pan.bg6qed.com" target="_blank"><img src="img/pan.png" alt="AList" width="50px"/></a></li>
+            <li><a href="javascript:location.href = 'mailto:' + ['bg6qed','gmail.com'].join('@')" aria-label="email"><img src="img/mail.png" alt="Email" width="50px"/></a></li>
+            <li><a href="https://www.qrz.com/db/BG6QED" target="_blank"><img src="img/qrz.png" alt="QRZ Profile" width="50px"/></a></li>
+            <li><a href="https://ham.moe/@BG6QED" target="_blank"><img src="img/sharkey.png" alt="Mastodon" width="50px"/></a></li>
+            <li><a href="https://t.me/BG6QED" target="_blank"><img src="img/telegram.png" alt="Telegram" width="50px"/></a></li>
+            <li><a href="https://x.com/BG6QED_X" target="_blank"><img src="img/twitter.png" alt="X Profile" width="50px"/></a></li>
+        </ul>
+    </main>
+    <footer class="footer">
+        <img src="https://count.getloli.com/@BG6QED?name=BG6QED&theme=moebooru-h&padding=1&offset=0&align=center&scale=0.73&pixelated=1&darkmode=auto" alt="BG6QED" /><br />
+        <img class="footer-icon" src="img/on-air.png" alt="On Air Icon">
+        <div id="copyright"></div>
+    </footer>
+    <div class="spectrum-container"></div>
+    <canvas class="spectrum-container" id="spectrum"></canvas>
+    <div id="custom-cursor"></div>
+    <script src="style/js/main.js"></script>
+</body>
+</html>

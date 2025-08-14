@@ -204,3 +204,56 @@ document.addEventListener('click', (e) => {
     addCircle(x, y);
 });
 document.body.style.cursor = 'none';
+
+// 友链功能
+document.addEventListener('DOMContentLoaded', () => {
+    const friendsBtn = document.getElementById('friends-link-btn');
+    const friendsModal = document.getElementById('friends-modal');
+    const closeBtn = document.getElementById('close-friends-modal');
+    
+    // 打开友链弹窗
+    friendsBtn.addEventListener('click', () => {
+        friendsModal.classList.add('show');
+        document.body.style.overflow = 'hidden'; // 防止背景滚动
+    });
+    
+    // 关闭友链弹窗
+    closeBtn.addEventListener('click', () => {
+        friendsModal.classList.remove('show');
+        document.body.style.overflow = ''; // 恢复滚动
+    });
+    
+    // 点击弹窗外部关闭
+    friendsModal.addEventListener('click', (e) => {
+        if (e.target === friendsModal) {
+            friendsModal.classList.remove('show');
+            document.body.style.overflow = '';
+        }
+    });
+    
+    // ESC键关闭弹窗
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && friendsModal.classList.contains('show')) {
+            friendsModal.classList.remove('show');
+            document.body.style.overflow = '';
+        }
+    });
+    
+    // 为友链按钮添加鼠标悬停效果
+    friendsBtn.addEventListener('mouseenter', () => {
+        customCursor.classList.add('active');
+    });
+    
+    friendsBtn.addEventListener('mouseleave', () => {
+        customCursor.classList.remove('active');
+    });
+    
+    // 为弹窗中的链接添加鼠标悬停效果
+    friendsModal.addEventListener('mouseenter', () => {
+        customCursor.style.display = 'block';
+    });
+    
+    friendsModal.addEventListener('mouseleave', () => {
+        customCursor.style.display = 'none';
+    });
+});

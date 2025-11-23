@@ -167,8 +167,8 @@ window.addEventListener('load', () => {
     const footerElement = document.querySelector('#copyright');
     if (footerElement) {
         footerElement.innerHTML = `
-            <a target="_self" rel="nofollow">©2021.06 - ${getFormattedDate()}<br>
-            88 DE <a href="http://qsl.net/bg6qed/" target="_blank">BG6QED</a></a>
+            <a target="_self" rel="nofollow">©2021.07 - ${getFormattedDate()}<br>
+            88 DE <a href="https://qsl.net/bg6qed" target="_blank">BG6QED</a></a>
         `;
     }
 });

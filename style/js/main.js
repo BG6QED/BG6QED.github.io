@@ -152,18 +152,25 @@ function getFormattedDate() {
 
 window.addEventListener('load', () => {
     document.querySelector('.text').classList.add('ready');
-    document.querySelector('.bio').classList.add('ready');
+    const bios = document.querySelectorAll('.bio');
+    bios.forEach((bio, index) => {
+        const delay = 800 + (index * 3500);
+        setTimeout(() => {
+            bio.classList.add('ready');
+        }, delay);
+    });
+    
     document.querySelectorAll('.social-links li').forEach(li => li.classList.add('ready'));
     createSpectrumLines();
     initSpectrum();
-
+    
     if (window.innerWidth > 767) {
-        for (let i = 0; i < 8; i++) { 
+        for (let i = 0; i < 8; i++) {
             const [x, y] = [Math.random() * 95 + 1, Math.random() * 90 + 1];
             addCircle(x, y);
         }
     }
-
+    
     const footerElement = document.querySelector('#copyright');
     if (footerElement) {
         footerElement.innerHTML = `
